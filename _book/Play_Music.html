@@ -1,0 +1,384 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Play Music with 4A · AGL_4A QuickStart</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="IoT.Bzh Team">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="resources/ebook.css">
+        
+    
+        
+    
+        
+    
+
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="TipsAndTricks/TipsAndTricks.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="Play_Music.html">
+            
+                <a href="Play_Music.html">
+            
+                    
+                    Play Music with 4A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="TipsAndTricks/TipsAndTricks.html">
+            
+                <a href="TipsAndTricks/TipsAndTricks.html">
+            
+                    
+                    Tips & Tricks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="TipsAndTricks/GetRolesList.html">
+            
+                <a href="TipsAndTricks/GetRolesList.html">
+            
+                    
+                    Get Roles list
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="TipsAndTricks/GetServiceStatus.html">
+            
+                <a href="TipsAndTricks/GetServiceStatus.html">
+            
+                    
+                    Get Service Status
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="TipsAndTricks/CheckApi.html">
+            
+                <a href="TipsAndTricks/CheckApi.html">
+            
+                    
+                    Check API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="TipsAndTricks/GetHALsStatus.html">
+            
+                <a href="TipsAndTricks/GetHALsStatus.html">
+            
+                    
+                    Get HALs Status
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="TipsAndTricks/GetAvailableDevices.html">
+            
+                <a href="TipsAndTricks/GetAvailableDevices.html">
+            
+                    
+                    Get Available Devices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="TipsAndTricks/ChangeHal.html">
+            
+                <a href="TipsAndTricks/ChangeHal.html">
+            
+                    
+                    Change Hal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Play Music with 4A</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="play-music">Play Music</h1>
+<h2 id="aknowledge-roles"><strong>Aknowledge roles</strong></h2>
+<p>To play music you must know which roles you want to use, for music it&apos;s going to
+be the multimedia role.</p>
+<p>To display the available roles enter:</p>
+<pre><code class="lang-bash">4a-api roles
+</code></pre>
+<h2 id="play-command"><strong>Play command</strong></h2>
+<p>4a-play must be used like this.</p>
+<pre><code class="lang-bash">4a-play &lt;file&gt; [role]
+</code></pre>
+<p>So in our example it will look like this:</p>
+<pre><code class="lang-bash">4a-play Happy_MBB_75.ogg multimedia
+</code></pre>
+<p>Where <em>file</em> is the path to the file that you want to play, <em>role</em> is the role of the 4a-play (multimedia for example).</p>
+<blockquote>
+<p><strong>NOTE</strong>: For AGL versions before FF.RC3 you had to specify the device to use. The device that matches with &quot;multimedia&quot; is &quot;hw:0,0,2&quot; (for more details please read the
+&quot;Get HALs status&quot; section).
+The command would have been :</p>
+<pre><code class="lang-bash">4a-play Happy_MBB_75.ogg hw:0,0,2 multimedia
+</code></pre>
+</blockquote>
+<h2 id="adjust-the-sound"><strong>Adjust the sound</strong></h2>
+<p>Music is too loud ? What about adjusting the sound ?</p>
+<p>On the main menu, hit the &quot;Mixer&quot; icon.</p>
+<p><img src="images/MixerBaseMenu.png" alt="Main Menu Interface"></p>
+<p>Then drag the cursor to change the sound volume of the
+wanted role.</p>
+<p><img src="images/changeSound.png" alt="Mixer Interface"></p>
+<h2 id="play-multiple-sounds-on-different-roles"><strong>Play multiple Sounds on different roles</strong></h2>
+<p>While your music is playing you might want to simulate an emergency sound, to do
+so, in a new terminal, enter:</p>
+<pre><code class="lang-bash">4a-play emergencySound.ogg emergency
+</code></pre>
+<p>Your music should automatically be lowered so you can hear the emergency sound.
+As your emergency sound turns off, your music returns automatically to the
+previous volume.</p>
+<blockquote>
+<p><strong>NOTE</strong>: For AGL versions before FF.RC3 you had to specify the device to use. The device that matches with &quot;emergency&quot; is &quot;hw:0,0,4&quot; (for more details please read the
+&quot;Get HALs status&quot; section).
+The command would have been :</p>
+<pre><code class="lang-bash">4a-play emergencySound.ogg hw:0,0,4 emergency
+</code></pre>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="TipsAndTricks/TipsAndTricks.html" class="navigation navigation-next " aria-label="Next page: Tips & Tricks">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Play Music with 4A","level":"1.2","depth":1,"next":{"title":"Tips & Tricks","level":"1.3","depth":1,"path":"TipsAndTricks/TipsAndTricks.md","ref":"TipsAndTricks/TipsAndTricks.md","articles":[{"title":"Get Roles list","level":"1.3.1","depth":2,"path":"TipsAndTricks/GetRolesList.md","ref":"TipsAndTricks/GetRolesList.md","articles":[]},{"title":"Get Service Status","level":"1.3.2","depth":2,"path":"TipsAndTricks/GetServiceStatus.md","ref":"TipsAndTricks/GetServiceStatus.md","articles":[]},{"title":"Check API","level":"1.3.3","depth":2,"path":"TipsAndTricks/CheckApi.md","ref":"TipsAndTricks/CheckApi.md","articles":[]},{"title":"Get HALs Status","level":"1.3.4","depth":2,"path":"TipsAndTricks/GetHALsStatus.md","ref":"TipsAndTricks/GetHALsStatus.md","articles":[]},{"title":"Get Available Devices","level":"1.3.5","depth":2,"path":"TipsAndTricks/GetAvailableDevices.md","ref":"TipsAndTricks/GetAvailableDevices.md","articles":[]},{"title":"Change Hal","level":"1.3.6","depth":2,"path":"TipsAndTricks/ChangeHal.md","ref":"TipsAndTricks/ChangeHal.md","articles":[]}]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["regexplace","livereload"],"root":"docs","styles":{"website":"resources/ebook.css","ebook":"resources/ebook.css","pdf":"resources/ebook.css"},"pluginsConfig":{"regexplace":{"removeFirstPartsInSectionNumber":true,"substitutes":[{"pattern":"<!-- pagebreak -->","flags":"g","substitute":"<div class=\"page-break\"></div>"},{"pattern":"<!-- clear -->","flags":"g","substitute":"<div class=\"clear\"></div>"},{"pattern":"<!-- nopagebreak -->","flags":"g","substitute":"<div class=\"nopb\">"},{"pattern":"<!-- endnopagebreak -->","flags":"g","substitute":"</div>"},{"pattern":"<!-- note -->","flags":"g","substitute":"<div class=\"note\">"},{"pattern":"<!-- endnote -->","flags":"g","substitute":"</div>"},{"pattern":"<!-- warning -->","flags":"g","substitute":"<div class=\"warning\">"},{"pattern":"<!-- endwarning -->","flags":"g","substitute":"</div>"},{"pattern":"!\\[(.*?)\\]\\((.*?)(?:\\s+\"(.*)\")?\\){0,}{caption=1([^\\}]*)}","flags":"gmi","substitute":"<figure id=\"fig_PAGE_LEVEL_._INDEX_\"><img $3 alt=\"$1\" title=\"$1\" href=\"$2\"><figcaption></figcaption></figure>","decode":true},{"pattern":"<img ([^>]*) {0,}/{0,}> {0,}{caption=1([^\\}]*)}","flags":"g","substitute":"<figure id=\"fig_PAGE_LEVEL_._INDEX_\"><img $2 $1><figcaption></figcaption></figure>","decode":true},{"pattern":"<img (.*)alt=\"([^\"]*)\"(.*) {0,1}/{0,1}><figcaption></figcaption>","flags":"g","substitute":"<img$1alt=\"$2\"$3><figcaption><span>Picture _PAGE_LEVEL_._INDEX_</span>: $2</figcaption>","store":{"substitute":"<a href=\"_PAGE_PATH_#fig_PAGE_LEVEL_._INDEX_\">Pic. _PAGE_LEVEL_._INDEX_</a> <span>$2</span>","variable_name":"pictures"}},{"pattern":"<img ([^>]*)> {0,}{:: {0,}style=([^}]*)}","flags":"g","substitute":"<img $1 style=$2>","decode":true}]},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"hidepagefooters":[2,3],"theme":"default","keywords":"AGL, Development, Iotbzh","author":"IoT.Bzh Team","published":"August 2018","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Verdana","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"//h:div[@class=\"page-break\"]","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"hidepageheaders":[2,3],"variables":{"pictures":[]},"subtitle":"Developer Documentation","version":"1.0","title":"AGL_4A QuickStart","website":"http://iot.bzh","gitbook":"3.2.2","description":"This is a quick guide on 4a"},"file":{"path":"Play_Music.md","mtime":"2018-08-03T13:00:44.724Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-08-03T13:46:18.777Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
