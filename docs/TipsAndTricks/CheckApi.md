@@ -7,7 +7,7 @@ You might want to test if an api has not crashed or is running, to do so use the
 For exemple :
 
 ```bash
-$ a4-api api smixer ping
+$ 4a-api api smixer ping
 Detected systemd unit file!
 Port detected: 1025
 ON-REPLY 1:smixer/ping: OK
